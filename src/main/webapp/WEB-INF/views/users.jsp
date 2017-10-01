@@ -10,8 +10,16 @@
 <html>
 <head>
     <title>Users</title>
+    <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/style.css"/>"/>
+    <script type="application/javascript" src="<c:url value="/static/js/script.js"/>"></script>
 </head>
 <body>
+<div id = "mainDiv">
+    Please, input id:
+    <input id="checkedId" type="text" size="10"/>
+    <button id="goButton">Go</button>
+</div>
+
 <table>
     <thead>
     <tr>
@@ -30,5 +38,6 @@
     </c:forEach>
     </tbody>
 </table>
+
 </body>
 </html>

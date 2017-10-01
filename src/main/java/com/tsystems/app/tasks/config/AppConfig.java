@@ -18,7 +18,7 @@ import java.util.Properties;
  */
 @Configuration
 @EnableTransactionManagement
-public class DatabaseConfig {
+public class AppConfig {
 
     @Bean
     public DataSource dataSource() {

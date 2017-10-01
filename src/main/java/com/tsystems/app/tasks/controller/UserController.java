@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by ksenia on 28.09.2017.
  */
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/")
 public class UserController {
 
     @Autowired
