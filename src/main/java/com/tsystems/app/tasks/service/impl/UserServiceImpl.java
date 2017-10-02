@@ -18,7 +18,10 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public List<User> getAllUsers() {
+    public List<User> findUsers(String searchedParam) {
+        if (searchedParam != null) {
+            return userDao.findUsers(searchedParam);
+        }
         return userDao.getUsers();
     }
 }

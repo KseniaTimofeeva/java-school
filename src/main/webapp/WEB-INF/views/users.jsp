@@ -11,13 +11,16 @@
 <head>
     <title>Users</title>
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/style.css"/>"/>
-    <script type="application/javascript" src="<c:url value="/static/js/script.js"/>"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="<c:url value="/static/js/script.js"/>"></script>
 </head>
 <body>
-<div id = "mainDiv">
-    Please, input id:
-    <input id="checkedId" type="text" size="10"/>
-    <button id="goButton">Go</button>
+<div id="mainDiv">
+    <form action="<c:url value="/user"/>" method="get">
+        Please, input text:
+        <input id="searchedParam" name="searchedParam" type="text" size="10"/>
+        <button id="searchButton" type="submit" role="button">Search</button>
+    </form>
 </div>
 
 <table>

@@ -8,6 +8,6 @@ import java.util.List;
  * Created by ksenia on 28.09.2017.
  */
 public interface UserService {
-    List<User> getAllUsers();
 
+    List<User> findUsers(String searchedParam);
 }

@@ -17,6 +17,10 @@ public class UserDao {
     private EntityManager em;
 
     public List<User> getUsers() {
-        return em.createQuery("select u from User u", User.class).getResultList();
+        return em.createNamedQuery(User.GET_ALL, User.class).getResultList();
+    }
+
+    public List<User> findUsers(String searchedParam) {
+        return em.createNamedQuery(User.GET_BY_ID, User.class).setParameter("id", '%' + searchedParam + '%').getResultList();
     }
 }
